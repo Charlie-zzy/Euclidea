@@ -96,7 +96,7 @@
              */
             function parseImgTag(line) {
                 if (line.match(/!\[([^\]]+)]\(([^\)]+\.(png|gif|svg))\)/g)) {
-                    line = line.replace(/!\[([^\]]+)]\(([^\)]+\.(png|gif|svg))\)/g, '<img src="$2" alt="$1">');
+                    line = line.replace(/!\[([^\]]+)]\(([^\)]+\.(png|gif|svg))\)/g, '<img src="https://cdn.jsdelivr.net/gh/MathsFans/Euclidea$2" alt="$1">');
                 }
                 return line;
             }
@@ -106,7 +106,7 @@
              */
             function parseButtonTag(line) {
                 if (line.match(/\[([^\]]+)]\(([^\)]+\.(png|gif|svg))\)/g)) {
-                    line = line.replace(/\[([^\]]+)]\(([^\)]+\.(png|gif|svg))\)/g, '<button data-img="$2">$1</button>');
+                    line = line.replace(/\[([^\]]+)]\(([^\)]+\.(png|gif|svg))\)/g, '<button data-img="https://cdn.jsdelivr.net/gh/MathsFans/Euclidea$2">$1</button>');
                 }
                 return line;
             }
