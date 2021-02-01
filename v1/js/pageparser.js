@@ -33,7 +33,7 @@
             var url = $(this).attr('data-img'),
                 $link = $(this);
             if (url && $link.is('[data-img]')) {
-                $link.after('<br><img src="https://cdn.jsdelivr.net/gh/MathsFans/Euclidea' + url + '" style="display:block;">');
+                $link.after('<br><img src="https://cdn.jsdelivr.net/gh/MathsFans/Euclidea/' + url + '" style="display:block;">');
                 $link.removeAttr('data-img');
             } else if ($link.next().next().is(':visible')) {
                 $link.next().hide().next().hide();
